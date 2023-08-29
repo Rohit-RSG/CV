@@ -10,14 +10,32 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <style>
-    /* Your custom CSS styles can go here */
+    /* Your custom CSS styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: consolas;
+      background-color: #C3F8FF;
     }
 
-    .profile-picture {
-      max-width: 200px;
-      border-radius: 50%;
+    h1 {
+      color: #99ccff;
+    }
+
+    h3,
+    h4,
+    h2 {
+      color: #16213E;
+    }
+
+    hr {
+      border-style: none;
+      border-top-style: dotted;
+      border-color: grey;
+      border-width: 5px;
+      width: 5%;
+    }
+
+    img {
+      height: 150px;
     }
   </style>
 </head>
@@ -93,7 +111,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="skill-rating" data-rating="⭐⭐⭐⭐⭐">
           <td>Linux</td>
           <td>⭐⭐⭐⭐⭐</td>
         </tr>
@@ -106,6 +124,26 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Smooth scrolling effect for navigation links
+    $(document).ready(function () {
+      $("a[href^='#']").on('click', function (event) {
+        event.preventDefault();
+        const target = $(this.hash);
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+      });
+
+      // Hover effect for skill ratings
+      $('.skill-rating').hover(function () {
+        $(this).text("⭐⭐⭐⭐⭐");
+      }, function () {
+        const rating = $(this).data('rating');
+        $(this).text(rating);
+      });
+    });
+  </script>
 </body>
 
 </html>
