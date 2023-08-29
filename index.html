@@ -34,8 +34,10 @@
       width: 5%;
     }
 
-    img {
-      height: 150px;
+    .profile-picture {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
     }
   </style>
 </head>
@@ -43,7 +45,7 @@
 <body>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 text-center">
         <img src="Rohit-image.png" alt="Rohit's Profile Picture" class="profile-picture img-fluid">
       </div>
       <div class="col-md-8">
@@ -63,86 +65,30 @@
   <hr class="my-5">
 
   <div class="container">
-    <h3 class="mb-4">Job Employment Details</h3>
-    <h4 class="mb-3">NOC Engineer at Giesecke and Devrient</h4>
-    <ul>
-      <li>Server Upgrades</li>
-      <li>Patching (Monthly)</li>
-      <li>Linux System Administration</li>
-    </ul>
-    <h4 class="mb-3">Previous Companies</h4>
-    <ol>
-      <li><a href="https://www.ericsson.com/en">Ericsson India Global Services Pvt Ltd</a></li>
-      <li>Indus Towers Ltd.</li>
-    </ol>
-  </div>
-
-  <hr class="my-5">
-
-  <div class="container">
-    <h4 class="mb-3">Education Details:</h4>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Course</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2009</td>
-          <td>Intermediate</td>
-        </tr>
-        <tr>
-          <td>2007</td>
-          <td>High School</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr class="my-5">
-
-    <h2 class="mb-4">Skill Set</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Skill</th>
-          <th>Rating/Ability</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="skill-rating" data-rating="⭐⭐⭐⭐⭐">
-          <td>Linux</td>
-          <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h4><a href="contact-information.html">Contact Information</a></h4>
+    <!-- Rest of your content -->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
-    // Smooth scrolling effect for navigation links
-    $(document).ready(function () {
-      $("a[href^='#']").on('click', function (event) {
-        event.preventDefault();
-        const target = $(this.hash);
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-      });
-
-      // Hover effect for skill ratings
-      $('.skill-rating').hover(function () {
-        $(this).text("⭐⭐⭐⭐⭐");
-      }, function () {
-        const rating = $(this).data('rating');
-        $(this).text(rating);
-      });
+$(document).ready(function () {
+    $("a[href^='#']").on('click', function (event) {
+      event.preventDefault();
+      const target = $(this.hash);
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 800);
     });
+
+    // Hover effect for skill ratings
+    $('.skill-rating').hover(function () {
+      $(this).text("⭐⭐⭐⭐⭐");
+    }, function () {
+      const rating = $(this).data('rating');
+      $(this).text(rating);
+    });
+  });
   </script>
 </body>
 
