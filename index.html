@@ -6,76 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rohit Singh Gaur's Personal Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
+  <style>
+    /* Your custom CSS styles can go here */
+    body {
+      font-family: Arial, sans-serif;
+    }
 
+    .profile-picture {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 
 <body>
-  <table cellspacing="10">
-    <td><img src="Rohit-image.png" alt="Rohit's Profile Picture"></img></td>
-    <td>
-      <p>
-      <h1>Rohit Singh Gaur</h1>
-      <em>NOC Support Engineer at <a href="https://www.gi-de.com/en/"><strong>Giesececke and Devrient</strong></a></em>
-      </p>
-      <p>
-        Have an experience of several years in Telecom Industry, Having a vast experience of working in multiple domains like Operations, Product support and currently working on Service Assurance & Application support.
-        Have successfully worked on multiple technologies like <em><strong>Linux system administration</strong></em>, <em><strong>Vmware ESXi</strong></em> and <em><strong>AWS platform</strong></em>.
-        Also have the knowledge of <em>Service-Now, Splunk</em> in ITIL framework.
-        Looking forward to expand my domain and explore new avenues of IT industry where I can use my existing skill sets towards growth of organization along with myself.
-      </p>
-    </td>
-  </table>
-  <hr>
-  <h3><strong>Job Employment Details</strong></h3>
-  <h4>Working as a NOC Engineer at Giesececke and Devrient</h4>
-  <ul>
-    <li>Server Updgrade</li>
-    <li>Patching, Monthly Patching</li>
-    <li>Linux System administration</li>
-  </ul>
-  <h4>My Previous Companies</h4>
-  <ol>
-    <li><a href="https://www.ericsson.com/en">Ericsson India Global Services Pvt Ltd</a></li>
-    <li>Indus Towers Ltd.</li>
-  </ol>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="Rohit-image.png" alt="Rohit's Profile Picture" class="profile-picture img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h1>Rohit Singh Gaur</h1>
+        <em class="d-block">NOC Support Engineer at <a href="https://www.gi-de.com/en/">Giesecke and Devrient</a></em>
+        <p>
+          Have several years of experience in the Telecom Industry, with expertise in Operations, Product support, and
+          currently focused on Service Assurance & Application support.
+          Proficient in technologies like <strong>Linux system administration</strong>, <strong>Vmware ESXi</strong>, and <strong>AWS platform</strong>.
+          Familiar with tools like <em>Service-Now</em> and <em>Splunk</em> within the ITIL framework.
+          Passionate about expanding expertise in IT industry and contributing to organizational growth.
+        </p>
+      </div>
+    </div>
+  </div>
 
-  <hr>
+  <hr class="my-5">
 
-  <h4>Education Details:</h4>
-  <table cellspacing="10">
-    <thead>
-      <th>Year</th>
-      <th>Course</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2009</td>
-        <td>Intermediate</td>
-      </tr>
-      <tr>
-        <td>2007</td>
-        <td>High School</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <hr>
-  <h2>Skill Set</h2>
-  <table>
-    <thead>
-      <th>Skill</th>
-      <th>Rating/Ability</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Linux</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4><a href="contact-information.html">Contact Information</a></h4>
+  <div class="container">
+    <h3 class="mb-4">Job Employment Details</h3>
+    <h4 class="mb-3">NOC Engineer at Giesecke and Devrient</h4>
+    <ul>
+      <li>Server Upgrades</li>
+      <li>Patching (Monthly)</li>
+      <li>Linux System Administration</li>
+    </ul>
+    <h4 class="mb-3">Previous Companies</h4>
+    <ol>
+      <li><a href="https://www.ericsson.com/en">Ericsson India Global Services Pvt Ltd</a></li>
+      <li>Indus Towers Ltd.</li>
+    </ol>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="container">
+    <h4 class="mb-3">Education Details:</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2009</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>High School</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <h2 class="mb-4">Skill Set</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Rating/Ability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Linux</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4><a href="contact-information.html">Contact Information</a></h4>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
